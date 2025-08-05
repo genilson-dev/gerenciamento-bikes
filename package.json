@@ -1,14 +1,14 @@
 {
   "name": "gerenciamento-bikes",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.ts",
   "repository": "https://github.com/genilson-dev/gerenciamento-bikes.git",
   "author": "Genilson Monteiro da Silva <programationwork@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node src/server.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio"
